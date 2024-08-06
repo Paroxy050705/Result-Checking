@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="orange">
+    <h2>
+        <center>
+            <hr width="700" color="black" size="10">
+            Result 
+            <hr width="700" color="black" size="10">
+        </center>
+    </h2>
+    <h3>
+        Here everyone have 7 subjects.Each Subject has 120 marks.
+        <br><b>The total marks of exam is 840.</b>
+    </h3>
+    <script>
+        var a,b,c,d,e,f,g;
+        a=Number(prompt("Enter English marks:"));
+        b=Number(prompt("Enter Bengali marks:"));
+        c=Number(prompt("Enter Math marks:"));
+        d=Number(prompt("Enter Physics marks:"));
+        e=Number(prompt("Enter Chemistry marks:"));
+        f=Number(prompt("Enter Biology marks:"));
+        g=Number(prompt("Enter Computer Science marks:"));
+        var total=Number(a+b+c+d+e+f+g);
+        var avg=Number(total/7);
+        var per=Number((total/840)*100);
+        document.write("<br>English marks:"+a);
+        document.write("<br>Bengali marks:"+b);
+        document.write("<br>Mathmatics marks:"+c);
+        document.write("<br>Physics marks:"+d);
+        document.write("<br>Chemistry marks:"+e);
+        document.write("<br>Biology marks:"+f);
+        document.write("<br>Computer Science marks:"+g);
+        document.write("<br>Total marks:"+total);
+        document.write("<br>Average marks:"+avg);
+        document.write("<br>Percentage marks:"+per);
+        if(per>=80 && per<=100){
+            document.write("<br>Grade A");
+        }
+        else if(per>=65 && per<80){
+            document.write("<br>Grade B");
+        }
+        else if(per>=50 && per<65){
+            document.write("<br>Grade C");
+        }
+        else if(per>=40 && per<50){
+            document.write("<br>Grade D");
+        }
+        else if(per>=30 && per<40){
+            document.write("<br>Grade E");
+        }
+        else{
+            document.write("<br>Fail");
+        }
+        
+    </script>
+    
+</body>
+</html>
